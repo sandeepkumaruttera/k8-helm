@@ -37,7 +37,7 @@ metadata:
     purpose: deployment
     tier: web
 spec:
-  replicas: 20
+  replicas: 1
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -58,4 +58,5 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:1.25.4
+#        image: nginx:1.25.4
+        image: php:8.1-apache
